@@ -182,39 +182,59 @@ app {
     }
 }
 
-.mdc-icon-button {
-    position: absolute !important;
-}
+
+
+
+
 .chessboard {
     float: left;
     position: relative;
 }
     .chessboard .white {
-        color:white;
+        color: #daf2fd;
     }
 
     .chessboard .black {
-        color: black;
+        color:navy;
     }
 
-    .chessboard .ra1 {
-        left: 100px;
-        top: 100px;
+    .chessboard .sqare {
+        padding:0px;
+        float:left;
     }
-    .chessboard .e2 {
-        left: 30px;
-        top: 40px;
-    }
+
+.mdc-icon-button {
+    position: absolute !important;
+    --mdc-ripple-fg-size: 80px !important;
+    --mdc-ripple-fg-scale: 1 !important;
+    --mdc-ripple-left: 0px !important;
+    --mdc-ripple-top: 0px !important;
+    --mdc-ripple-fg-opacity: 0.5 !important;
+    /*background-color: aqua !important;*/
+}
+
+        .mdc-icon-button::after {
+            background-color: aqua !important;
+        }
+
 .fa-square-full {
     font-size: 80px;
 }
 
-.sqare-a1 {
-    top:560px;
-    /*float:left;*/
+.sqare-a8 {
+    left: 0px;
+    top: 0px;
 }
+.sqare-b8 {
+    left: 80px;
+    top: 0px;
+}
+
 
 .fa-chess-rook, .fa-chess-pawn {
     font-size: 60px;
-    text-shadow: 0 0 5px #000;
+}
+.fa-chess-rook {
+    position:absolute;
+    top:90px;
 }

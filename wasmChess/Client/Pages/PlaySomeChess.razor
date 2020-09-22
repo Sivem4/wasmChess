@@ -2,21 +2,29 @@
 @using MatBlazor
 
 <div class="chessboard">
-    <div>
-        <MatIconButton Class="black sqare sqare-a1">
-            <i class="fas fa-square-full" />
-        </MatIconButton>
+    <div class="8-line">
+        <div>
+            <MatIconButton Class="white sqare sqare-a8">
+                <i class="fas fa-square-full" aria-hidden="true" />
+            </MatIconButton>
+        </div>
+        <div>
+            <MatIconButton Class="black sqare sqare-b8">
+                <i class="fas fa-square-full" aria-hidden="true" />
+            </MatIconButton>
+        </div>
     </div>
+</div>
 
-  
-    @*<img src="/img/1200px-Chess_Board.svg.png" alt="chessboard" width="640" height="640" />*@
-    <MatIconButton Class="white rook ra1">
+
+@*<img src="/img/1200px-Chess_Board.svg.png" alt="chessboard" width="640" height="640" />*@
+<MatIconButton Class="white rook ra1">
         <i class="fas fa-chess-rook"></i>
     </MatIconButton>
-    <MatIconButton Class="white pawn e2">
+    @*<MatIconButton Class="white pawn e2">
         <i class="fas fa-chess-pawn"></i>
-    </MatIconButton>
-</div>
+    </MatIconButton>*@
+
 
 
 @code {
