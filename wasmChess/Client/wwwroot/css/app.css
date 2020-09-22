@@ -181,3 +181,27 @@ app {
         display: block;
     }
 }
+
+.chessboard {
+    float: left;
+    position: relative;
+    -webkit-text-stroke-width: 2px;
+}
+
+    .chessboard img{
+        /*position:relative;*/
+    }
+
+.iconify {
+    font-size: 80px;
+    -webkit-text-stroke-width: 2px;
+    text-shadow: 0 0 5px #000;
+}
+.white-pawn {
+    color:khaki;
+}
+.e2 {
+    position:absolute;
+    left: 320px;
+    top: 480px;
+}
