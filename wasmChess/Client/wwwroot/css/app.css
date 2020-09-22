@@ -182,12 +182,19 @@ app {
     }
 }
 
+.mdc-icon-button {
+    position: absolute !important;
+}
 .chessboard {
     float: left;
     position: relative;
 }
     .chessboard .white {
         color:white;
+    }
+
+    .chessboard .black {
+        color: black;
     }
 
     .chessboard .ra1 {
@@ -198,12 +205,16 @@ app {
         left: 30px;
         top: 40px;
     }
-
-.fas {
-    font-size: 60px;
-    text-shadow: 0 0 5px #000;
+.fa-square-full {
+    font-size: 80px;
 }
 
-.mdc-icon-button{
-    position:absolute !important;
+.sqare-a1 {
+    top:560px;
+    /*float:left;*/
+}
+
+.fa-chess-rook, .fa-chess-pawn {
+    font-size: 60px;
+    text-shadow: 0 0 5px #000;
 }
