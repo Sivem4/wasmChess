@@ -185,23 +185,25 @@ app {
 .chessboard {
     float: left;
     position: relative;
-    -webkit-text-stroke-width: 2px;
 }
-
-    .chessboard img{
-        /*position:relative;*/
+    .chessboard .white {
+        color:white;
     }
 
-.iconify {
-    font-size: 80px;
-    -webkit-text-stroke-width: 2px;
+    .chessboard .ra1 {
+        left: 100px;
+        top: 100px;
+    }
+    .chessboard .e2 {
+        left: 30px;
+        top: 40px;
+    }
+
+.fas {
+    font-size: 60px;
     text-shadow: 0 0 5px #000;
 }
-.white-pawn {
-    color:khaki;
-}
-.e2 {
-    position:absolute;
-    left: 320px;
-    top: 480px;
+
+.mdc-icon-button{
+    position:absolute !important;
 }
