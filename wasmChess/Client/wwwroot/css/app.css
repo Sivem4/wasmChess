@@ -36,7 +36,7 @@ app {
         justify-content: flex-end;
     }
 
-        .main .top-row > a, .main .top-row .btn-link {
+        .main .top-row  a, .main .top-row .btn-link {
             white-space: nowrap;
             margin-left: 1.5rem;
         }
@@ -167,7 +167,7 @@ app {
         top: 0;
     }
 
-    .main > div {
+    .main  div {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
@@ -198,43 +198,83 @@ app {
         color:navy;
     }
 
-    .chessboard .sqare {
-        padding:0px;
-        float:left;
+    .chessboard .square {
+        padding:0px !important;
+        float:left !important;
     }
 
-.mdc-icon-button {
-    position: absolute !important;
-    --mdc-ripple-fg-size: 80px !important;
-    --mdc-ripple-fg-scale: 1 !important;
-    --mdc-ripple-left: 0px !important;
-    --mdc-ripple-top: 0px !important;
-    --mdc-ripple-fg-opacity: 0.5 !important;
-    /*background-color: aqua !important;*/
-}
+    .chessboard .mdc-icon-button {
+        position: absolute !important;
+        --mdc-ripple-fg-size: 80px !important;
+        --mdc-ripple-fg-scale: 1 !important;
+        --mdc-ripple-left: 0px !important;
+        --mdc-ripple-top: 0px !important;
+        --mdc-ripple-fg-opacity: 0.5 !important;
+        /*background-color: aqua !important;*/
+    }
 
-        .mdc-icon-button::after {
+        .chessboard .mdc-icon-button::after {
             background-color: aqua !important;
         }
 
-.fa-square-full {
-    font-size: 80px;
-}
+    .chessboard .fa-square-full {
+        font-size: 80px;
+    }
 
-.sqare-a8 {
+    .chessboard .rank-eighth .square {
+        top: 0px;
+    }
+
+    .chessboard .rank-seventh .square {
+        top: 80px;
+    }
+
+    .chessboard .file-A .square {
+        left: 0px;
+    }
+
+    .chessboard .file-B .square {
+        left: 80px;
+    }
+
+    .chessboard .file-C .square {
+        left: 160px;
+    }
+
+    .chessboard .file-D .square {
+        left: 240px;
+    }
+
+    .chessboard .file-E .square {
+        left: 320px;
+    }
+
+    .chessboard .file-F .square {
+        left: 400px;
+    }
+
+    .chessboard .file-G .square {
+        left: 480px;
+    }
+
+    .chessboard .file-H .square {
+        left: 560px;
+    }
+
+/*.sqare-a8 {
     left: 0px;
     top: 0px;
 }
 .sqare-b8 {
     left: 80px;
     top: 0px;
-}
+}*/
 
 
-.fa-chess-rook, .fa-chess-pawn {
-    font-size: 60px;
-}
-.fa-chess-rook {
-    position:absolute;
-    top:90px;
-}
+    .chessboard .fa-chess-rook, .fa-chess-pawn {
+        font-size: 60px;
+    }
+    .chessboard .fa-chess-rook {
+        position:absolute;
+        top:90px;
+    }
