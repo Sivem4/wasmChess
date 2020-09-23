@@ -221,12 +221,36 @@ app {
         font-size: 80px;
     }
 
-    .chessboard .rank-eighth .square {
+    .chessboard .rank-8th .square {
         top: 0px;
     }
 
-    .chessboard .rank-seventh .square {
+    .chessboard .rank-7th .square {
         top: 80px;
+    }
+
+    .chessboard .rank-6th .square {
+        top: 160px;
+    }
+
+    .chessboard .rank-5th .square {
+        top: 240px;
+    }
+
+    .chessboard .rank-4th .square {
+        top: 320px;
+    }
+
+    .chessboard .rank-3rd .square {
+        top: 400px;
+    }
+
+    .chessboard .rank-2nd .square {
+        top: 480px;
+    }
+
+    .chessboard .rank-1st .square {
+        top: 560px;
     }
 
     .chessboard .file-A .square {
