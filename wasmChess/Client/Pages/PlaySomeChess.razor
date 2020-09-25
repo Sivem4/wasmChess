@@ -1,356 +1,55 @@
 ﻿@page "/"
 @using MatBlazor
+@using wasmChess.Shared
+
+
+
 
 <div class="chessboard">
-    <div class="rank-8th">
-        <div class="file-A">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-7th">
-        <div class="file-A">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-6th">
-        <div class="file-A">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-5th">
-        <div class="file-A">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-4th">
-        <div class="file-A">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-3rd">
-        <div class="file-A">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-2nd">
-        <div class="file-A">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
-    <div class="rank-1st">
-        <div class="file-A">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-B">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-C">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-D">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-E">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-F">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-G">
-            <MatIconButton Class="black square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-        <div class="file-H">
-            <MatIconButton Class="white square">
-                <i class="fas fa-square-full" aria-hidden="true" />
-            </MatIconButton>
-        </div>
-    </div>
+
+    @*@for (int i = 0; i > chessboard.RanksNumber; i++)
+        {
+            for (int j = 0; j < chessboard.FilesNumber; j++)
+            {
+                <div class="@chessboard.squares[i,j].RankName">
+                    <div class="@chessboard.squares[i,j].FileName">
+                        <i class="fas fa-square-full" aria-hidden="true" style="color: black;" />
+                    </div>
+                </div>
+            }
+
+        }*@
+
+    @foreach (var square in chessboard.squares)
+    {
+        <div class="@square.RankName">
+            <div class="@square.FileName">
+                <i class="fas fa-square-full" aria-hidden="true" style="color: @square.Color" />
+            </div>
+        </div>
+
+    }
+
+    <MatIconButton Class="piece Ra1">
+        <i class="fas fa-chess-rook"></i>
+    </MatIconButton>
+
+
+
+
 </div>
 
 
+
 @*<img src="/img/1200px-Chess_Board.svg.png" alt="chessboard" width="640" height="640" />*@
-@*<MatIconButton Class="white rook ra1">
-        <i class="fas fa-chess-rook"></i>
-    </MatIconButton>*@
-    @*<MatIconButton Class="white pawn e2">
-        <i class="fas fa-chess-pawn"></i>
-    </MatIconButton>*@
-
-
 
 @code {
+    public string style = "color: #b62b2b";
 
+    Chessboard chessboard;
+
+    protected override void OnInitialized()
+    {
+        chessboard = new Chessboard();
+    }
 }

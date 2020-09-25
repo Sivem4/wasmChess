@@ -167,10 +167,10 @@ app {
         top: 0;
     }
 
-    .main  div {
-        padding-left: 2rem !important;
+/*    .main  div {
+        padding-left: 1rem !important;
         padding-right: 1.5rem !important;
-    }
+    }*/
 
     .navbar-toggler {
         display: none;
@@ -184,24 +184,131 @@ app {
 
 
 
-
-
 .chessboard {
     float: left;
     position: relative;
+    width: 640px;
+    height: 640px;
+    
 }
+
     .chessboard .white {
-        color: #daf2fd;
+        color: #e1e6e8;
     }
 
     .chessboard .black {
-        color:navy;
+        color: #7f7fce;
     }
+
+    .chessboard .red {
+        color: crimson;
+    }
+
 
     .chessboard .square {
         padding:0px !important;
+    }
+
+    .chessboard .fa-square-full {
+        font-size: 80px;
+    }
+
+    .chessboard .piece {
+        font-size: 60px !important;
         float:left !important;
     }
+
+    .chessboard .Ra1 {
+        padding: 0px !important;
+        position: absolute;
+        left: 0px;
+        top: 560px;
+    }
+
+
+/*Chessboard definition of ranks and squares NEW WAY*/
+
+    .chessboard .rank-8 {
+        position: absolute;
+        top: 0px;
+    }
+
+    .chessboard .rank-7 {
+        position: absolute;
+        top: 80px;
+    }
+
+    .chessboard .rank-6 {
+        position: absolute;
+        top: 160px;
+    }
+
+    .chessboard .rank-5 {
+        position: absolute;
+        top: 240px;
+    }
+
+    .chessboard .rank-4 {
+        position: absolute;
+        top: 320px;
+    }
+
+    .chessboard .rank-3 {
+        position: absolute;
+        top: 400px;
+    }
+
+    .chessboard .rank-2 {
+        position: absolute;
+        top: 480px;
+    }
+
+    .chessboard .rank-1 {
+        position: absolute;
+        top: 560px;
+    }
+
+    .chessboard .file-A {
+        position: absolute;
+        left: 0px;
+    }
+
+    .chessboard .file-B {
+        position: absolute;
+        left: 80px;
+    }
+
+    .chessboard .file-C {
+        position: absolute;
+        left: 160px;
+    }
+
+    .chessboard .file-D {
+        position: absolute;
+        left: 240px;
+    }
+
+    .chessboard .file-E {
+        position: absolute;
+        left: 320px;
+    }
+
+    .chessboard .file-F {
+        position: absolute;
+        left: 400px;
+    }
+
+    .chessboard .file-G {
+        position: absolute;
+        left: 480px;
+    }
+
+    .chessboard .file-H {
+        position: absolute;
+        left: 560px;
+    }
+/*-------------------------------------------*/
+
 
     .chessboard .mdc-icon-button {
         position: absolute !important;
@@ -210,95 +317,11 @@ app {
         --mdc-ripple-left: 0px !important;
         --mdc-ripple-top: 0px !important;
         --mdc-ripple-fg-opacity: 0.5 !important;
+        width: 80px !important;
+        height: 80px !important;
         /*background-color: aqua !important;*/
     }
 
         .chessboard .mdc-icon-button::after {
             background-color: aqua !important;
         }
-
-    .chessboard .fa-square-full {
-        font-size: 80px;
-    }
-
-    .chessboard .rank-8th .square {
-        top: 0px;
-    }
-
-    .chessboard .rank-7th .square {
-        top: 80px;
-    }
-
-    .chessboard .rank-6th .square {
-        top: 160px;
-    }
-
-    .chessboard .rank-5th .square {
-        top: 240px;
-    }
-
-    .chessboard .rank-4th .square {
-        top: 320px;
-    }
-
-    .chessboard .rank-3rd .square {
-        top: 400px;
-    }
-
-    .chessboard .rank-2nd .square {
-        top: 480px;
-    }
-
-    .chessboard .rank-1st .square {
-        top: 560px;
-    }
-
-    .chessboard .file-A .square {
-        left: 0px;
-    }
-
-    .chessboard .file-B .square {
-        left: 80px;
-    }
-
-    .chessboard .file-C .square {
-        left: 160px;
-    }
-
-    .chessboard .file-D .square {
-        left: 240px;
-    }
-
-    .chessboard .file-E .square {
-        left: 320px;
-    }
-
-    .chessboard .file-F .square {
-        left: 400px;
-    }
-
-    .chessboard .file-G .square {
-        left: 480px;
-    }
-
-    .chessboard .file-H .square {
-        left: 560px;
-    }
-
-/*.sqare-a8 {
-    left: 0px;
-    top: 0px;
-}
-.sqare-b8 {
-    left: 80px;
-    top: 0px;
-}*/
-
-
-    .chessboard .fa-chess-rook, .fa-chess-pawn {
-        font-size: 60px;
-    }
-    .chessboard .fa-chess-rook {
-        position:absolute;
-        top:90px;
-    }
